@@ -13,8 +13,8 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/milligram.css">
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -26,13 +26,17 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="container">
+        <div class="jumbotron">
+            <h1>User Manager</h1>
+            <p class="lead">Always a pleasure assisting you.</p>
+        </div>
         <div class="header">
             <ul class="nav">
                 <li class="active">
-                    <a href="/">Home</a>
+                    <a href="/" class="button button-outline">Home</a>
                 </li>
                 <li>
-                    <a href="/user-details.html">Add New User</a>
+                    <a href="/user-details.html" class="button">Add New User</a>
                 </li>
             </ul>
         </div>
@@ -56,7 +60,9 @@
                             <td>turbowars@gmail.com</td>
                             <td>8879787536</td>
                             <td>Active</td>
-                            <td><button>Edit User</button></td>
+                            <td>
+                                <button>Edit User</button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
