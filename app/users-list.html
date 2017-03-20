@@ -16,9 +16,6 @@
     <link rel="stylesheet" href="styles/milligram.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
 </head>
 
 <body>
@@ -40,11 +37,26 @@
                 </li>
             </ul>
         </div>
+        <script id="user-template" type="text/x-handlebars-template">
+            {{#each this}}
+            <tr class="user-list-item">
+                <td>{{firstName}}</td>
+                <td>{{lastName}}</td>
+                <td>{{email}}</td>
+                <td>{{phone}}</td>
+                <td>{{state}}</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Deactivate</button>
+                </td>
+            </tr>
+            {{/each}}
+        </script>
         <div class="row">
             <div class="column">
-                <table>
+                <table class="user-list">
                     <thead>
-                        <tr>
+                        <tr class="user-list-header">
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Email</th>
@@ -54,26 +66,30 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Dheeraj</td>
-                            <td>Sampath</td>
-                            <td>turbowars@gmail.com</td>
-                            <td>8879787536</td>
-                            <td>Active</td>
-                            <td>
-                                <button>Edit User</button>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-        <div class="footer">
+    <menu id="contextMenu" style="display:none" class="showcase">
+        <command label="rotate" icon="edit" onclick="alert('rotate')">
+            <command label="resize" onclick="alert('resize')">
+                <command label="twitter" onclick="alert('twitter')">
+                    <hr>
+                    <command label="facebook" onclick="alert('facebook')">
+    </menu>
+    </menu>
+    <div class="footer">
         <div class="container">
             <p>Made with ♥ by <a href="http://www.cosmicbaba.com">Dheeraj</a></p>
         </div>
     </div>
+    <!-- build:js scripts/vendor/vendor.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="/bower_components/jquery-contextmenu/contextmenu.js"></script>
+    <!-- endbuild -->
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
