@@ -46,20 +46,20 @@
                     <h3>Add / Modify User Details</h3>
                     <form action="">
                         <div class="form-element">
-                            <label for="fname">First Name</label>
-                            <input type="text" name="fname" id="fname">
+                            <label for="fname">First Name* (only alphabets)</label>
+                            <input type="text" name="fname" id="fname" aria-describedby="name-format" pattern="[a-zA-Z]*" required>
                         </div>
                         <div class="form-element">
-                            <label for="lname">Last Name</label>
-                            <input type="text" name="lname" id="lname">
+                            <label for="lname">Last Name (only alphabets)</label>
+                            <input type="text" name="lname" id="lname" aria-describedby="name-format" pattern="[a-zA-Z]*">
                         </div>
                         <div class="form-element">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email">
+                            <label for="email">Email* (Ex:john@gmail.com)</label>
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="form-element">
-                            <label for="phone">Phone</label>
-                            <input type="text" name="phone" id="phone">
+                            <label for="phone">Phone* (Only Numbers)</label>
+                            <input type="tel" name="phone" id="phone" required maxlength="10" pattern="\d*">
                         </div>
                         <div class="form-button-group">
                             <button>Save</button>
