@@ -2,18 +2,18 @@
     "firstName": "Dheeraj",
     "lastName": "Sampath",
     "email": "turbowars@gmail.com",
-    "phone": 8879787536,
+    "phone": 9876543121,
     "state": true
 }, {
-    "firstName": "Dheeraj",
-    "lastName": "Sampath",
-    "email": "turbowars@gmail.com",
-    "phone": 8879787536,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john@gmail.com",
+    "phone": 123456789,
     "state": true
 }, {
-    "firstName": "Dheeraj",
-    "lastName": "Sampath",
-    "email": "turbowars@gmail.com",
-    "phone": 8879787536,
+    "firstName": "Ram",
+    "lastName": "suresh",
+    "email": "suresh@gmail.com",
+    "phone": 987123456,
     "state": true
 }]

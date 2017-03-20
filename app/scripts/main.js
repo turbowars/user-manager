@@ -16,20 +16,11 @@ $(function(){
  * @returns Object 
  */
  
-var context;
-
-//Handlebar helpers
-Handlebars.registerHelper('for', function(from, to, incr, block) {
-    var accum = '';
-    for(var i = from; i < to; i += incr)
-        accum += block.fn(i);
-    return accum;
-});
 
 //Create a user
 
 //Read the list of users
-var xhr = new XMLHttpRequest();
+var context, xhr = new XMLHttpRequest();
 xhr.open('GET', 'data/users.json');
 xhr.onload = function() {
     if (xhr.status === 200) {
